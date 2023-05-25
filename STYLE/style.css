@@ -1,0 +1,1368 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    /* border: 1px solid red; */
+}
+
+/* -- header main box css work-- */
+.before-header-welcome {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.414);
+    border-bottom: white;
+    background-image: linear-gradient(to left, #3264f5 2%, #7004bc 85%);
+}
+
+header {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: block;
+    height: 59px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left, #3264f5 2%, #7004bc 85%);
+    transition: all 1s ease-in-out;
+    animation: first 2s ease-in-out;
+    z-index: 99;
+}
+
+.headersticky {
+    position: sticky;
+    top: 0;
+}
+
+/* -- navabar css-- */
+
+#navbar {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    align-items: center;
+}
+
+/* -- before logo sidemenu button css -- */
+
+#navbar .lines {
+    margin: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+    z-index: 199;
+    padding: 9px;
+    border: 1px solid red;
+}
+
+#navbar .show-logo-lines {
+    display: block;
+}
+
+/* -- before logo sidemenu button css -- */
+#navbar .lines .line1,
+#navbar .lines .line3 {
+    width: 20px;
+    background-color: white;
+    height: 1px;
+    margin: 3px;
+    transition: all 0.5s;
+    position: relative;
+}
+
+/* -- before logo sidemenu button css -- */
+#navbar .lines .line2 {
+    width: 15px;
+    height: 1px;
+    margin: 5px;
+    display: block;
+    background-color: rgb(92, 106, 146);
+    transition: all 0.5s;
+    position: relative;
+}
+
+/* -- before logo menu button  css -- */
+
+.menu-list-with-left-side-button {
+    /* display: none; */
+    width: 25%;
+    height: 49vh;
+    border-radius: 15px;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    color: white;
+    font-size: large;
+    background-color: #845981;
+    z-index: 99;
+}
+
+.click-to-open-wrap{
+    width: 100%;
+    height: 100vh;
+    transition: all 2s;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.881);
+}
+
+.menu-list-with-left-side-button ul li {
+    margin-top: 12px;
+    margin-left: 85px;
+    list-style-position: inside;
+    padding:10px;
+    /* text-align: center; */
+}
+
+.contact-details-with-left-side-button {
+    position: absolute;
+    top: 90px;
+    right: 90px;
+    /* display: none; */
+    color: white;
+    font-size: large;
+    background-color: #845981;
+    z-index: 99;
+    width: 25%;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+/* .contact-details-with-left-side-button .tr-margin-top{
+   
+} */
+.contact-details-with-left-side-button th {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.798);
+}
+.contact-details-with-left-side-button td {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* #navbar .lines:hover .line1,
+#navbar .lines:hover .line3 {
+    width: 25px;
+    height: 30px;
+    transform: rotate(90deg);
+    background-color: rgb(66, 226, 103);
+} */
+
+
+/* -- before logo menu button hover css -- */
+/* #navbar .lines:hover .line2 {
+    margin: -20px 20px;
+    z-index: 2;
+    width: 25px;
+    height: 30px;
+    transform: rotate(90deg);
+    background-color: rgb(0, 0, 0);
+} */
+
+
+
+/* --left side panel css-- */
+
+#home .left-side {
+    position: relative;
+    top: -50px;
+    left: -150px;
+    height: 500px;
+    width: 300px;
+}
+
+/* --left side panel css-- */
+#home .left-side img {
+    width: 400px;
+}
+
+/* --right side panel css-- */
+#home .right-side {
+    height: 500px;
+    position: relative;
+    right: -38rem;
+
+}
+
+/* --right side panel css-- */
+#home .right-side img {
+    width: 300px;
+    height: 300px;
+}
+
+/* -- header logo image css -- */
+
+#navbar .logo {
+    position: relative;
+    left: 70px;
+    top: 5px;
+
+}
+
+/* -- header logo image css -- */
+#navbar .logo img {
+    width: 80px;
+    height: 18px;
+    margin: 9px;
+    align-items: center;
+}
+
+/* -- header menu css-- */
+
+#navbar .menubar {
+    position: absolute;
+    left: 200px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1000;
+}
+
+/* -- header menu unorder list css-- */
+#navbar .menubar ul {
+    display: flex;
+    position: relative;
+    left: 30px;
+    list-style: none;
+}
+
+/* -- header menu unorder list submenu css-- */
+#navbar .menubar ul li .submenu {
+    display: none;
+    position: relative;
+    color: white;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, rgb(47, 47, 148) 2%, rgba(92, 37, 92, 0.17) 80%);
+}
+
+/* -- header menu unorder list submenubar css-- */
+#navbar .menubar ul li .submenu li {
+    padding: 15px;
+    width: 180px;
+}
+
+/* -- header menu unorder list submenubar hover css-- */
+#navbar .menubar ul li .submenu li:hover {
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.382);
+}
+
+/* -- header menu unorder list submenubar hover css-- */
+#navbar .menubar ul li:hover .submenu {
+    display: flex;
+}
+
+/* -- header menu unorder list submenubar list position css-- */
+#navbar .menubar ul li .list1 {
+    position: absolute;
+    top: 40px;
+    left: -20px;
+}
+
+/* -- header menu unorder list submenubar list position css-- */
+#navbar .menubar ul li .list2 {
+    position: absolute;
+    top: 40px;
+    left: 85px;
+}
+
+/* -- header menu unorder list submenubar list position css-- */
+#navbar .menubar ul li .list3 {
+    position: absolute;
+    top: 40px;
+    left: 225px;
+}
+
+/* -- header menu unorder list submenubar list position css-- */
+#navbar .menubar ul li .list4 {
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+
+/* -- header menu unorder list submenubar list position css-- */
+#navbar .menubar ul li .list5 {
+    position: absolute;
+    top: 40px;
+    left: 480px;
+}
+
+/* -- header menu unorder list anchor tag  css-- */
+#navbar .menubar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+}
+
+
+/* -- menu hover effect css-- */
+
+#navbar .menubar ul li a:hover {
+    color: red;
+
+}
+
+#navbar .menubar ul li a:hover .submenu {
+    display: block;
+
+}
+
+/* -- HEADER SOCIAL MEDIA ICON-- */
+
+#navbar .right {
+    width: 150px;
+    position: absolute;
+    right: 31px;
+    color: white;
+}
+
+/* -- HEADER SOCIAL MEDIA ICON-- */
+#navbar .right .fab {
+    color: white;
+    font-size: 20px;
+    margin: 0px 15px;
+    align-items: center;
+}
+
+/* -- HEADER SOCIAL MEDIA ICON-- */
+#navbar .right .fab:hover {
+    color: black;
+}
+
+/* -- FIRST SECTION CSS START-- */
+#btop {
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    background-color: rgba(0, 0, 0, 0.563);
+    border-radius: 45%;
+    padding: 10px;
+    z-index: 999;
+    color: white;
+    display: none;
+
+}
+
+#btop.show {
+    display: block;
+}
+
+.first-section {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 99vh;
+    position: relative;
+    background-image: linear-gradient(to left, #3264f5 2%, #7004bc 85%);
+}
+
+/* left-side fa icon link to jumo page */
+.first-section .fa-jump .fa-house-user,
+.first-section .fa-jump .fa-address-card,
+.first-section .fa-jump .fa-briefcase,
+.first-section .fa-jump .fa-users,
+.first-section .fa-jump .fa-blog,
+.first-section .fa-jump .fa-id-badge {
+    position: fixed;
+    margin: 30px;
+    left: -15px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0.4;
+    z-index: 1990;
+}
+
+.first-section .fa-solid {
+    transition: all 0.3s linear;
+}
+
+.first-section .fa-solid:hover {
+    opacity: 1;
+    color: rgb(174, 49, 49);
+    font-size: 32px;
+
+}
+
+.first-section .fa-jump .fa-house-user {
+    top: 100px;
+}
+
+.first-section .fa-jump .fa-address-card {
+    top: 170px;
+}
+
+.first-section .fa-jump .fa-briefcase {
+    top: 240px;
+}
+
+.first-section .fa-jump .fa-users {
+    top: 310px;
+}
+
+.first-section .fa-jump .fa-blog {
+    top: 380px;
+}
+
+.first-section .fa-jump .fa-id-badge {
+    top: 450px;
+}
+
+.first-section .fa-jump ul {
+    list-style: none;
+}
+
+.first-section img,
+#About img {
+    position: relative;
+    top: 150px;
+    width: 300px;
+    height: 350px;
+}
+
+/* -- 1st section content css-- */
+
+.first-section .content {
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 9rem;
+    left: 40rem;
+}
+
+.first-section .before-heading-p {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #d720cb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.first-section .heading {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.first-section .text {
+    color: #ffffff8f;
+    margin: 25px 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.first-section a,
+#About .content a {
+    text-decoration: none;
+    margin: 7px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 1s;
+}
+
+.first-section a:hover,
+#About .content a:hover {
+    background-color: white;
+    color: black;
+    transform-style: preserve-3d;
+
+}
+
+/* -- section 2 css -- */
+
+#About {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    position: relative;
+}
+
+#About .content {
+    width: 50%;
+    position: relative;
+    padding: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#About img {
+    width: 40%;
+    float: right;
+    right: 50px;
+    margin-left: 40px;
+    transition: all 2s;
+}
+
+#About img:hover {
+    perspective: 3000px;
+    transform: scale(1.2) rotate(10deg);
+}
+
+
+#About .content .before-heading,
+#section-3 .content .before-heading {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+#About .content .heading,
+#section-3 .content .heading {
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px 0px;
+
+}
+
+#About .content .heading span {
+    color: red;
+}
+
+#About .content .text,
+#section-3 .content .text {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 0px;
+    opacity: 0.5;
+    overflow-wrap: break-word;
+}
+
+#About .content .sec2-btn {
+    margin-top: 30px;
+    background-color: #8d1d85;
+}
+
+#About .content .sec2-btn:hover {
+    margin-top: 30px;
+    color: black;
+    font-weight: 500;
+    background-image: linear-gradient(to left, purple 3%, white 90%)
+}
+
+/* -- SECTION 2 FA ICON SECTION CSS-- */
+
+#fa-icon {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 120vh;
+    height: 50vh;
+    padding: 0px 150px;
+
+}
+
+#fa-icon .wrap {
+    margin: 15px;
+}
+
+
+#fa-icon .wrap .fabg {
+    background-color: #3264f5;
+    margin: 25px 70px;
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    transition: all 0.7s;
+}
+
+#fa-icon .wrap .fabg:hover {
+    scale: 1.2;
+    cursor: pointer;
+    color: yellowgreen;
+}
+
+#fa-icon .wrap .grey {
+    background-color: grey;
+}
+
+#fa-icon .wrap .pink {
+    background-color: rgb(204, 37, 222);
+}
+
+#fa-icon .wrap .purple {
+    background-color: rgb(84, 21, 84);
+}
+
+#fa-icon .wrap h4 {
+    opacity: 0.5;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* -- SECTION 3 CSS -- */
+
+#section-3 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #3264f5;
+    top: 70vh;
+}
+
+#section-3 img {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    width: 35%;
+    height: 400px;
+    filter: blur(3px);
+    transition: all 1s;
+}
+
+#section-3 img:hover {
+    filter: blur(0px);
+}
+
+#section-3 .content {
+    position: relative;
+    width: 40%;
+    right: 95px;
+    top: 150px;
+    float: right;
+    color: white;
+}
+
+#section-3 .content .clients ul {
+    display: flex;
+
+}
+
+#section-3 .content .clients ul li {
+    width: 150px;
+    margin: 20px;
+    list-style: none;
+}
+
+#section-3 .content .clients h6 {
+    font-size: 2rem;
+}
+
+
+#section-3 .content .clients p {
+    opacity: 0.7;
+}
+
+#section-3 .content .clients .fa-solid {
+    font-size: 3rem;
+    padding-left: 35px;
+
+}
+
+#section-3 .content .clients .counter {
+    font-size: 3rem;
+    text-align: center;}
+
+
+
+/* --SECTION 4 CSS-- */
+
+#section4 {
+    position: relative;
+    top: 80vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#section4 .wrap {
+    width: 60%;
+}
+
+#section4 .wrap div {
+    margin: 30px 5px;
+}
+
+
+#section4 .wrap .heading {
+    font-size: 2.5rem;
+    margin: 10px;
+    opacity: 0.7;
+    transform-style: preserve-3d;
+}
+
+#section4 .wrap .heading:hover {
+    transform: rotateZ(20px);
+
+}
+
+#section4 .wrap .heading span {
+    color: blue;
+}
+
+#section4 .wrap .text {
+    opacity: 0.5;
+}
+
+.images-wrap {
+    display: flex;
+}
+
+.images-wrap .box1 {
+    width: 33%;
+    margin: 10px;
+}
+
+
+.images-wrap .box1 ul li {
+    list-style: none;
+    margin: 7px;
+    transition: all 1s;
+}
+
+.images-wrap .box1 ul li:nth-of-type(1):hover {
+    transform: scale(1.2);
+}
+
+.images-wrap .box1 ul li:nth-of-type(2):hover {
+    background-image: url(image/shape-10.png);
+    color: white;
+}
+
+.images-wrap .box2 ul li:nth-of-type(2):hover {
+    background-image: url(image/shape-11.png);
+    color: white;
+}
+
+.images-wrap .box3 ul li:nth-of-type(2):hover {
+    background-image: url(image/shape-9.png);
+    color: white;
+}
+
+
+.images-wrap .box1 ul li:nth-of-type(3) {
+    opacity: 0.5;
+}
+
+
+.images-wrap .box1 ul li .fab {
+
+    margin: 7px;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.images-wrap .box1 ul li .fab:hover {
+    color: rgb(32, 142, 85);
+}
+
+/* SECTION 5 CSS */
+
+#section5 {
+    width: 100%;
+    background-color: rgb(233, 232, 232);
+    height: 100vh;
+    top: 100vh;
+    position: relative;
+}
+
+#section5 .css3work {
+    animation: slide 2s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    20% {
+        opacity: 0.2;
+        filter: brightness(50px);
+    }
+
+    40% {
+        opacity: 0.4;
+        filter: grayscale(100%);
+    }
+
+    60% {
+        opacity: 0.6;
+        filter: invert(100%);
+    }
+
+    80% {
+        opacity: 0.8;
+        filter: sepia(50);
+    }
+
+    100% {
+        opacity: 1;
+        filter: drop-shadow(2px 2px 2px red);
+    }
+
+}
+
+#section5 .container {
+    display: flex;
+    padding: 100px;
+}
+
+#section5 .container .wrap,
+#section5 .container .image {
+    width: 49%;
+}
+
+#section5 .container .wrap ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+#section5 .container .wrap ul li:nth-of-type(1) {
+    font-size: 1.5rem;
+}
+
+#section5 .container .wrap ul li:nth-of-type(2) {
+    font-size: 2rem;
+    margin: 15px 2px;
+}
+
+#section5 .container .wrap ul li span {
+    color: rgb(175, 34, 149)
+}
+
+#section5 .container .wrap ul li:nth-of-type(3) {
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+#section5 .container .wrap ul li:nth-of-type(4) {
+
+    margin: 30px 2px;
+}
+
+#section5 .container .wrap ul li:nth-of-type(4) a {
+
+    text-decoration: none;
+    color: white;
+}
+
+#section5 .container .wrap ul li:nth-of-type(4) a:hover {
+
+    background-color: rgb(142, 86, 142);
+    color: white;
+}
+
+/* SECION 6 CSS */
+
+#work {
+    width: 100%;
+    position: relative;
+    top: 100vh;
+    height: 100vh;
+
+}
+
+#work .content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#work .content .wrap {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#work .content .wrap .before-title p {
+    font-size: 1.3rem;
+    margin-top: 100px;
+}
+
+#work .content .wrap .title p {
+    font-size: 4rem;
+    margin: 10px 50px;
+    text-align: center;
+}
+
+#work .content .wrap .title snap {
+    color: tomato;
+}
+
+#work .content .wrap .text p {
+    margin: 10px 50px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+
+#work .content .wrap .division p snap {
+    color: red;
+}
+
+#work .gallery {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    top: 10vh;
+}
+
+.gallery .gallery-image {
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}
+
+
+#work .gallery-image:nth-of-type(2) {
+    position: relative;
+    top: -150px;
+}
+
+#work .gallery-image:nth-of-type(4) {
+    position: relative;
+    top: -455px;
+    left: 150px;
+}
+
+#work .gallery-image:nth-of-type(5) {
+    position: relative;
+    top: -5px;
+    left: -450px;
+}
+
+#work .gallery-image:nth-of-type(6) {
+    position: relative;
+    top: -610px;
+    left: 600px;
+}
+
+#work .gallery-image:nth-of-type(7) {
+    position: relative;
+    top: -310px;
+}
+
+#work .gallery-image:nth-of-type(8) {
+    position: relative;
+    top: -310px;
+}
+
+#work .gallery .image {
+    transition: all .3s linear;
+    overflow: hidden;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+
+#work .gallery .image:hover {
+    transform: scale(1.15);
+}
+
+#work .gallery .after {
+    display: none;
+}
+
+/* SECTION 7 CSS */
+
+#Clients {
+    position: relative;
+    top: 260vh;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(8, 69, 238) 1%, rgb(147, 2, 226) 85%);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+#Clients .container {
+    width: 900px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Clients .avatar {
+    width: 90px;
+    background-color: rgba(0, 128, 128, 0.379);
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.468);
+    transition: all 2s;
+
+}
+
+
+#Clients .avatar:hover {
+    transform: rotatez(180deg);
+
+}
+
+#Clients #avatar1,
+#Clients #avatar7 {
+    position: relative;
+    top: -13rem;
+}
+
+#Clients #avatar2,
+#Clients #avatar6 {
+    position: relative;
+    top: 13rem;
+}
+
+#Clients #avatar3 {
+    position: relative;
+    right: 150px;
+}
+
+#Clients .container .title {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+#Clients .container div+p {
+    font-size: 1.2rem;
+    opacity: 0.7;
+    line-height: 30px;
+}
+
+#Clients .container h5 {
+    font-size: 1.4rem;
+    color: rgb(179, 0, 255);
+    margin: 1rem;
+}
+
+#Clients .container h5+p {
+    opacity: 0.6;
+}
+
+#Clients .container .rating-star {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: goldenrod;
+}
+
+#Clients .container .rating-star li {
+    padding: 5px;
+    list-style: none;
+}
+
+/* SECTION 8 CSS */
+#blog {
+    position: relative;
+    top: 260vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#blog .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+#blog .container ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#blog .container ul li:nth-of-type(1) {
+    color: goldenrod;
+    font-size: 20px;
+}
+
+#blog .container ul li:nth-of-type(2) p {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+#blog .container ul li:nth-of-type(2) span {
+    color: olivedrab;
+}
+
+#blog .container ul li:nth-of-type(3) {
+    display: flex;
+}
+
+#blog .container ul li:nth-of-type(3) .Blogwrap {
+    width: 32%;
+    box-shadow: 1px 1px 9px rgb(3, 0, 0);
+    border-radius: 17px;
+    margin: 15px;
+    transition: all 1s;
+}
+
+#blog .container ul li:nth-of-type(3) .Blogwrap:hover {
+    transform: translatey(-13px)
+}
+
+#blog .container ul li:nth-of-type(3) .Blogwrap li img {
+    width: 100%;
+    border-bottom: 5px solid black;
+    border-radius: 15px;
+}
+
+#blog .container ul li:nth-of-type(3) .Blogwrap li:nth-of-type(2) {
+    font-size: 20px;
+    color: rgb(221, 120, 120);
+    opacity: 0.6;
+    margin-top: 10px;
+    position: relative;
+    left: 0px;
+}
+
+#blog .container ul li:nth-of-type(3) .Blogwrap li:nth-of-type(3) h5 {
+    font-size: 25px;
+    margin: auto;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.738);
+}
+
+#blog .container ul li:nth-of-type(5) .flexbloglastcontent {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#blog .container ul li:nth-of-type(5) .flexbloglastcontent li img {
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.333);
+    padding: 10px;
+    border-radius: 40%;
+}
+
+#blog .container ul li:nth-of-type(5) .flexbloglastcontent li:last-child {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
+/* SECTION 9 CSS */
+
+#section9 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 300vh;
+    background-image: linear-gradient(to right, rgba(8, 69, 238, 0.649) 1%, rgb(147, 2, 226) 85%);
+}
+
+#section9 .clientlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    position: relative;
+}
+
+#section9 .clientlogo ul {
+    display: flex;
+}
+
+#section9 .clientlogo ul li {
+    list-style: none;
+    padding: 50px;
+}
+
+#section9 .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
+    opacity: 0.7;
+}
+
+/* CONTACT SECTION CSS */
+
+#Contact {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    top: 300vh;
+    z-index: -1;
+}
+
+#Contact .left {
+    width: 50%;
+    height: 80vh;
+    margin: 200px 100px;
+}
+
+#Contact .left form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact .left h3,
+#Contact .location h3 {
+    font-size: 3rem;
+    color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Contact .left ul li,
+#Contact .location ul li {
+    margin: 20px 1px;
+    list-style: none;
+}
+
+#Contact .left ul li input,
+#Contact .left textarea {
+    width: 250px;
+    background-color: rgb(226, 226, 226);
+    opacity: 0.8;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+#Contact .left textarea {
+    margin: 30px 50px;
+}
+
+#Contact .left a {
+    text-decoration: none;
+    background-color: #7004bc;
+    color: white;
+    opacity: 0.8;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 230px;
+}
+
+#Contact .left a:hover {
+    background-image: linear-gradient(to right, rgb(121, 106, 209) 1%, white 89%);
+    color: black;
+    font-weight: 500;
+}
+
+#Contact .left ul li:last-child {
+    margin-top: 50px;
+}
+
+#Contact .location {
+    position: relative;
+    top: 200px;
+}
+
+#Contact .location ul li {
+    display: flex;
+}
+
+#Contact .location ul li .fa-solid {
+    margin-right: 20px;
+    font-size: 1.4rem;
+    color: rgb(66, 65, 65);
+}
+
+/* FOOTER CSS */
+
+footer {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    top: 300vh;
+    background-color: rgb(226, 222, 222);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container {
+    display: flex;
+
+}
+
+footer .container ul {
+    display: flex;
+}
+
+footer .container ul li {
+    list-style: none;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+footer .container ul .copyright {
+    margin-left: 150px;
+    opacity: 0.7;
+}
+
+/* --general btn css-- */
+
+.rounded-btn {
+    background-color: #3870f0;
+    padding: 7px 22px;
+    border-radius: 50px;
+}
+
+.hover-div-wrap {
+    display: flex;
+    position: absolute;
+    top: 250px;
+}
+
+.hover-div {
+    height: 100px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.hover-div2 {
+    position: relative;
+    left: -15px;
+
+}
+
+.hover-div3 {
+    position: relative;
+    left: -30px;
+
+}
+
+.hover-div4 {
+    position: relative;
+    left: -45px;
+
+}
+
+.hover-div5 {
+    position: relative;
+    left: -60px;
+
+}

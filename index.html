@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-jQuery </title>
+
+    <!-- file for headlins js -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="headline/css/reset.css">
+    <link rel="stylesheet" href="headline/css/style.css">
+    <script src="headline/js/modernizr.js"></script> -->
+
+    <!-- particle js csss file link -->
+    <!-- <link rel="stylesheet" href="particle/css/style.css"> -->
+
+    <!-- index file css -->
+
+    <link rel="stylesheet" href="STYLE/style.css">
+
+    <link rel="stylesheet" href="STYLE/sliderstyle.css">
+
+
+    <!-- PRE LOADER CDN  -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="PRE-LOADER/percent-preloader.min.css">
+
+    <script src="PRE-LOADER/percent-preloader.min.js"></script>
+
+
+    <!-- pointer css file  -->
+
+    <link rel="stylesheet" href="pointer/jquery.serialcursor.css">
+
+    <link rel="shortcut icon" href="image/vector-art-2.png" type="image/x-icon">
+
+    <!-- -- CDN LINK foe font awesome -- -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- wow js cdn link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <!-- swiper cdn -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.4/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.4/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- LOADER HTML  START-->
+    <div class="preloader">
+        <div class="inner">
+            <span class="percentage"><span id="percentage">15</span>%</span>
+        </div>
+        <div class="loader-progress" id="loader-progress"> </div>
+    </div>
+    <div class="transition-overlay"></div>
+    <!-- LOADER HTML END -->
+
+    <!-- particle js files -->
+
+    <!-- count particles -->
+    <!-- <div class="count-particles">
+        <span class="js-count-particles">--</span> particles
+    </div> -->
+
+    <!-- particles.js container -->
+    <!-- <div id="particles-js"></div> -->
+
+    <!-- scripts -->
+    <!-- <script src="particle/particlesjs-config.json"></script>
+    <script src="particle/js/app.js"></script> -->
+
+
+    <div class="before-header-welcome">
+        <p> "Aapka Swagat Hey, Hamare Web-page per " </p>
+    </div>
+    <header>
+        <div id="navbar">
+            <div class="lines">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <div class="click-to-open-wrap">
+                <div class="menu-list-with-left-side-button">
+
+                    <ul>
+                        <li>Home</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>jQuery</li>
+                        <li>BootStrap</li>
+
+                    </ul>
+                </div>
+
+                <div class="contact-details-with-left-side-button">
+                    <table>
+                        <th>Press Contact</th>
+                        <tr class="tr-margin-top">
+                            <td>Devid Warrier</td>
+                            <td><i class="fa-solid fa-user"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>-123 - 456 - 789 </td>
+                            <td><i class="fa-solid fa-contact-card"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>contact@gmail.com</td>
+                            <td><i class="fa-solid fa-mail-bulk"></i> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="logo">
+                <img src="image/logo-white.png" alt="">
+            </div>
+
+            <div class="menubar  ">
+                <ul>
+                    <li><a href="#">Home</a>
+                        <ul class="submenu list1">
+                            <li>Submenu 1 Home</li>
+                            <li>Submenu 2 Home</li>
+                            <li>Submenu 3 Home</li>
+                            <li>Submenu 4 Home</li>
+                            <li>Submenu 5 Home</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About Us</a>
+                        <ul class="submenu list2">
+                            <li>Submenu 1 About</li>
+                            <li>Submenu 2 About</li>
+                            <li>Submenu 3 About</li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Our Work</a>
+                        <ul class="submenu list3">
+                            <li>Submenu 1 Work</li>
+                            <li>Submenu 2 Work</li>
+                            <li>Submenu 3 Work</li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Clients</a>
+                        <ul class="submenu list4">
+                            <li>Submenu 1 Client</li>
+                            <li>Submenu 2 Client</li>
+                            <li>Submenu 3 Client</li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Our Blogs</a>
+                        <ul class="submenu list5">
+                            <li>Submenu 1 Blog</li>
+                            <li>Submenu 2 Blog</li>
+                            <li>Submenu 3 Blog</li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <div class="right">
+                <i class="fab fa-facebook-f animate__hinge"></i>
+                <i class="fab fa-instagram animate__hinge"></i>
+                <i class="fab fa-twitter animate__hinge"></i>
+
+            </div>
+        </div>
+    </header>
+    <!-- SECTION 1 HTML -->
+    <div class="top">
+        <button id="btop">
+            <i class="fa-solid fa-angles-up"></i>
+        </button>
+    </div>
+
+
+    <section class="first-section" id="home">
+        <div class="left-side ">
+            <img src="image/shape-8.png" id="sidemenubox">
+        </div>
+
+        <img src="image/vector-art-1.png" alt=""
+            class=" animate__animated  wow animate__headShake animate__infinite animate__slower">
+
+        <div class="content">
+            <p class="before-heading-p">Creative</p>
+            <div class="heading animate__animated wow animate__flipInX">
+                <h1>Digital Agency</h1>
+            </div>
+
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Dolor tenetur omnis,
+                    deleniti veniam modi nesciunt itaque!</p>
+            </div>
+
+
+            <a href="#" class="rounded-btn">Learn More</a>
+
+        </div>
+
+        <div class="right-side animate__animated animate__bounceInRight">
+            <img src="image/shape-7.png" alt="">
+        </div>
+
+        <div class="fa-jump">
+            <ul>
+                <li><a href="#home" title="Home"><i
+                            class="fa-solid fa-house-user animate__animated wow animate__zoomInUp"></i></a></li>
+                <li><a href="#About" title="About "><i
+                            class="fa-solid fa-address-card animate__animated wow animate__zoomInUp"></i></a></li>
+                <li><a href="#work" title=" Our Work"><i
+                            class="fa-solid fa-briefcase animate__animated wow animate__zoomInUp"></i></a></li>
+                <li><a href="#Clients" title="Our Clients"><i
+                            class="fa-solid fa-users animate__animated wow animate__zoomInUp"></i></a></li>
+                <li><a href="#blog" title="Our blog "><i
+                            class="fa-solid fa-blog animate__animated wow animate__zoomInUp"></i></a></li>
+                <li><a href="#Contact" title="Contact Us"><i
+                            class="fa-solid fa-id-badge animate__animated wow animate__zoomInUp"></i></a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- -- SECTION-2 HTML-- -->
+
+    <section id="About">
+        <div class="content">
+            <div class="before-heading">
+                <p>We are megaone company</p>
+            </div>
+            <div class="heading">
+                <p class="p1"> We are making <span>design </span> </p>
+                <p class="p2"> better for everyone</p>
+            </div>
+            <div class="text">
+                <p>There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour, or
+                    randomised words which don't look even slightly believable. If you
+                    are going to use a passage of Lorem Ipsum.</p>
+            </div>
+            <a href="#" class="rounded-btn  sec2-btn">Learn More</a>
+        </div>
+        <img src="image/vector-art-2.png" alt="" class="css3">
+
+        <section id="fa-icon">
+            <div class="wrap">
+                <div class="fabg"><i class="far fa-folder-open"></i></div>
+                <h4>World leader in consulting and finance</h4>
+            </div>
+
+            <div class="wrap">
+                <div class="fabg grey"><i class="fas fa-code"></i></div>
+                <h4>A focused team with a specialized skill</h4>
+            </div>
+
+            <div class="wrap">
+                <div class="fabg purple"><i class="fas fa-cog"></i></div>
+                <h4>Trusted and professional advisors for you</h4>
+            </div>
+
+            <div class="wrap">
+                <div class="fabg pink"><i class="fas fa-edit"></i></div>
+                <h4>Experience to give you a better results</h4>
+            </div>
+        </section>
+
+    </section>
+    <!-- -- SECTION-3 HTML-- -->
+    <section id="section-3">
+
+        <img src="image/vector-art-3.png">
+
+        <div class="content">
+            <div class="before-heading">
+                <p class=" wow animate__animated wow animate__bounce">We are megaone company</p>
+            </div>
+            <div class="heading">
+                <p class="p1"> We have done some </p>
+                <p class="p2"> great idea/stuff.</p>
+            </div>
+            <div class="text">
+                <p>There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected.</p>
+            </div>
+
+            <div class="clients">
+
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-users  fa-5x"></i>
+                        <div class="counter" data-target="9999">0</div>
+                        <p> Happy Clients</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-list  fa-5x"></i>
+                        <div class="counter" data-target="5843">0</div>
+                        <p>Lines Of Code</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-award  fa-5x"></i>
+                        <div class="counter" data-target="2755">0</div>
+                        <p>Project Completed</p>
+                    </li>
+                </ul>
+
+            </div>
+            <script src="COUNTER/js/functions.js"></script>
+        </div>
+    </section>
+
+    <!-- section-4 html  -->
+    <section id="section4">
+        <div class="wrap">
+            <div class="before-heading">
+                <p class="animate__animated wow animate__bounce">We are megaone company</p>
+            </div>
+            <div class="heading glass">
+                <h1>We have some <span class="blue">Great</span> talented staff</h1>
+            </div>
+            <div class="text">
+                <p>
+                    There are many variations of passages of lorem ipsum avalible, but the majority have suffered
+                    alteration in some form, by injected.
+                </p>
+            </div>
+            <div class="images-wrap">
+                <div class="box1">
+                    <ul>
+                        <li>
+                            <img src="image/team-img1.png" width="150px" alt="">
+                        </li>
+                        <li>
+                            <h2>David Joe</h2>
+                        </li>
+                        <li>
+                            <p>Director</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box1 box2">
+                    <ul>
+                        <li>
+                            <img src="image/team-img2.png" width="150px">
+                        </li>
+                        <li>
+                            <h2>Natalia Roy</h2>
+                        </li>
+                        <li>
+                            <p>Director</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="box1 box3">
+                    <ul>
+                        <li>
+                            <img src="image/team-img3.png" width="150px">
+                        </li>
+                        <li>
+                            <h2>John wok</h2>
+                        </li>
+                        <li>
+                            <p>Director</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION 5 HTML -->
+
+    <section id="section5">
+        <div class="container">
+            <div class="wrap">
+                <ul>
+                    <li>We are megaone company</li>
+                    <li>
+                        <h2><span>Creative Idea</span> and Developmnt Solution</h2>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et reprehenderit possimus, modi
+                            laborum expedita a assumenda velit ipsum, repellendus quas deserunt atque aut pariatur amet
+                            eligendi! Non consequuntur mollitia laudantium alias, excepturi exercitationem veniam? ipsum
+                            dolor sit, amet consectetur adipisicing elit. Quasi, perferendis porro mollitia, quibusdam
+                            dolor distinctio quis doloremque quas assumenda incidunt dolorum dolorem maiores est odio
+                            fuga repellendus perspiciatis magnam. Architecto magnam sit corporis! Molestiae?</p>
+                    </li>
+                    <li> <a href="#" class="rounded-btn  sec4-btn">Learn More</a></li>
+                </ul>
+            </div>
+            <div class="image css3work">
+                <img src="image/vector-art-4.png" width="600px" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- section 6 html -->
+
+    <section id="work">
+        <div class="content">
+            <div class="wrap">
+                <div class="before-title">
+                    <p>We are megaone Company</p>
+                </div>
+                <div class="title">
+                    <p> We have <snap>designed</snap> some great project </p>
+                </div>
+
+                <!-- <section class="cd-intro">
+                    <h1 class="cd-headline letters type">
+                        <span>We have
+                            <span class="cd-words-wrapper waiting">
+                                <b class="is-visible">designed</b>
+                                <b>developed</b>
+                            </span> some great project
+                        </span>
+                    </h1>
+                </section> -->
+
+
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas minus doloribus qui,
+                        facere quod deserunt animi. Fugit, molestiae quam cum maxime accusantium possimus.</p>
+                </div>
+
+
+                <div class="division">
+                    <p>
+                        <snap>All</snap> / Graphic Design / Web Design / SEO / Marketing
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image/work-2.jpg" id="img2" class="image" width="100px"></div>
+                <div class="swiper-slide"><img src="image/work-1.jpg" id="img1" class="image" width="100px"></div>
+                <div class="swiper-slide"><img src="image/work-4.jpg" id="img3" class="image"></div>
+                <div class="swiper-slide"><img src="image/work-3.jpg" id="img4" class="image"></div>
+                <div class="swiper-slide"><img src="image/work-5.jpg" id="img5" class="image"></div>
+                <div class="swiper-slide"><img src="image/work-6.jpg" id="img6" class="image"></div>
+                <div class="swiper-slide"><img src="image/work-7.jpg" id="img7" class="image"></div>
+                <div class="swiper-slide"><img src="image/work-8.jpg" id="img8" class="image"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 7 HTML -->
+    <section id="Clients">
+        <img src="image/avatar-1.png" class="avatar" id="avatar1">
+        <img src="image/avatar-2.png" class="avatar" id="avatar2">
+        <img src="image/avatar-3.png" class="avatar" id="avatar3">
+        <img src="image/avatar-4.png" class="avatar" id="avatar4">
+        <div class="container">
+            <div class="title">
+                <p> Some Great words from our Clients.</p>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates debitis molestias nesciunt sint!
+                Voluptas laboriosam neque iste excepturi, beatae dolorem provident fugit nostrum ducimus ad magni?
+                Voluptatum officiis ea voluptate ducimus autem quam magnam eveniet, minima aliquid et eius mollitia
+                accusamus, aliquam saepe expedita ut.</p>
+
+            <h5>David Villas</h5>
+            <p>Designer, Company Name</p>
+            <ul class="rating-star">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+        </div>
+        <img src="image/avatar-5.png" class="avatar" id="avatar5">
+        <img src="image/avatar-6.png" class="avatar" id="avatar6">
+        <img src="image/avatar-7.png" class="avatar" id="avatar7">
+        <img src="image/avatar-2.png" class="avatar" id="avatar8">
+    </section>
+
+    <!-- SECTION 8 HTML -->
+    <Section id="blog">
+        <div class="container">
+            <ul>
+                <li>We are Megaone Company</li>
+                <li>
+                    <p>Our <span>latest blogs</span> will</p>
+                    <p> keep everyone updated</p>
+                </li>
+                <li>
+                    <!-- BLOG 1 HTML -->
+                    <ul class="Blogwrap">
+                        <li><img src="image/blog-news-1.jpg" alt=""></li>
+                        <li>10 January 2023</li>
+                        <li>
+                            <h5>Web Design is fun</h5>
+                        </li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil voluptatibus labore totam
+                            quae.</li>
+                        <li>
+                            <ul class="flexbloglastcontent">
+                                <li><img src="image/avatar-1.png" alt=""></li>
+                                <li class="name">Heena Sword</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- BLOG 2 HTML -->
+                    <ul class="Blogwrap">
+                        <li><img src="image/blog-news-2.jpg" alt=""></li>
+                        <li>
+                            <p>01 July 2022</p>
+                        </li>
+                        <li>
+                            <h5>Future of website</h5>
+                        </li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil voluptatibus labore totam
+                            quae.</li>
+                        <li>
+                            <ul class="flexbloglastcontent">
+                                <li><img src="image/avatar-2.png" alt=""></li>
+                                <li>David Villas</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- BLOG 3 HTML -->
+                    <ul class="Blogwrap">
+                        <li><img src="image/blog-news-3.jpg" alt=""></li>
+                        <li>10 Octomber 2020</li>
+                        <li>
+                            <h5>Digital Marketing</h5>
+                        </li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil voluptatibus labore totam
+                            quae.</li>
+                        <li>
+                            <ul class="flexbloglastcontent">
+                                <li><img src="image/avatar-3.png" alt=""></li>
+                                <li>John Walker</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </Section>
+
+    <!-- SECTION 9 HTML -->
+    <section id="section9">
+        <div class="clientlogo">
+            <ul>
+                <li><img src="image/client-2.png" alt=""></li>
+                <li><img src="image/client-2.png" alt=""></li>
+                <li><img src="image/client-2.png" alt=""></li>
+                <li><img src="image/client-2.png" alt=""></li>
+                <li><img src="image/client-2.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117484.7321572366!2d72.59636517544135!3d23.045870235816068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87345db17291%3A0x2dc87190e39514ac!2sRed%20%26%20White%20Multimedia%20Education%20-%20Nikol%20-%20Ahmedabad!5e0!3m2!1sen!2sin!4v1673172463681!5m2!1sen!2sin"
+                width="1300" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- SECTION 10 HTML -->
+
+    <section id="Contact">
+        <div class="left">
+            <h3>Get in Touch</h3>
+            <form action="Get">
+                <ul>
+                    <li>
+                        <input type="text" placeholder="Name">
+                    </li>
+                    <li>
+                        <input type="email" placeholder="Email">
+                    </li>
+                    <li>
+                        <input type="Number" placeholder="Number">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Subject">
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+                <textarea name="Message" id="" placeholder="Message" cols="30" rows="10"></textarea>
+            </form>
+            <a href="#">Send Message</a>
+        </div>
+        <div class="location">
+            <h3>Our location</h3>
+            <ul>
+                <li>
+                    <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered .
+                    </p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>123 Park Avenue, New York,United States</p>
+                </li>
+
+                <li><i class="fa-solid fa-phone-volume"></i>
+                    <P>+1 631 1234 5678+1 631 1234 5678</P>
+                </li>
+                <li>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p>email@website.com abc@website.com</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+            </ul>
+            <ul>
+                <li class="copyright">
+                    <p>© 2020 MegaOne. Made With Love By Themesindustry.</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".glass"), {
+            max: 25,
+            speed: 400
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".glass"));
+        new WOW().init();
+    </script>
+
+    <!-- cdn cursor -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="/pointer/jquery.serialcursor.js"></script>
+
+    <!-- // swiper js cdn and script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- particle js files -->
+    <!-- <script src="particle/js/lib/stats.js"></script> -->
+
+    <script>
+
+        $(document).ready(function () {
+            // --------------------------------pointer js --------------------------------
+            $('#serialcursor').serialcursor();
+        });
+
+        // particle js 
+
+        // stats.js
+
+
+        // var count_particles, stats, update;
+        // stats = new Stats;
+        // stats.setMode(0);
+        // stats.domElement.style.position = 'absolute';
+        // stats.domElement.style.left = '0px';
+        // stats.domElement.style.top = '0px';
+        // document.body.appendChild(stats.domElement);
+        // count_particles = document.querySelector('.js-count-particles');
+        // update = function() {
+        //     stats.begin();
+        //     stats.end();
+        //     if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        //         count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        //     }
+        //     requestAnimationFrame(update);
+        // };
+        // requestAnimationFrame(update);
+
+
+
+        // ------------------------------back to top button js------------------------------
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 200) {
+                $('#btop').addClass('show');
+            }
+            else {
+                $('#btop').removeClass('show');
+
+            }
+        });
+
+        $('#btop').click(function () {
+            $('html,body').animate({
+                scrollTop: 0
+            })
+        })
+
+        // --------------------------------sticky header js--------------------------------
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 180) {
+                $('header').addClass('headersticky')
+            }
+            else ($('header').removeClass('headersticky'))
+        });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 180) {
+                $('.lines').addClass('show-logo-lines')
+            }
+            else ($('.lines').removeClass('show-logo-lines'))
+        });
+        // mouse click event for left side menu button
+
+        $('.lines').click(function () {
+            $('.click-to-open-wrap').fadeToggle("slow");
+        });
+
+        // -----------------------script for swiper slider-----------------------
+
+        // Initialize Swiper
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+
+    </script>
+    <!-- <script src="headline/js/jquery-2.1.1.js"></script>
+    <script src="headline/js/main.js"></script> -->
+
+
+
+</body>
+
+</html>
